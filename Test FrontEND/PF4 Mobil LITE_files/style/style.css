@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* MENIU FOOTER */
+.meniu_footer ul{
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-around */
+}
+
+.meniu_footer ul li:first-child, .meniu_footer ul li:nth-child(2), .meniu_footer ul li:nth-child(3), .meniu_footer ul li:nth-child(4){
+  margin: 0
+}
+#meniu_icon_portofoliu {
+  background-image: url(../img/meniu_icon_portofoliu2_blue.svg);
+}
+
+
+/* PRET */
+
+#pret {
+  display: block;
+  width: 120px;
+  max-width: 42%;
+  text-align: right;
+}
+.pretSimbol {
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 25px;
+
+}
+.modifpoz.pretSimbol::before {
+  content: '   ';
+  background: url('../img/modifpoz.svg');
+  background-size: 16px 20px;
+  background-repeat: no-repeat;
+
+  padding: 0px 25px 0px 0px;
+  vertical-align: middle;
+  
+  
+}
+.modifpoz.pretSimbol {
+  color: white!important;
+  background-color: #00c805;
+}
+.modifneg.pretSimbol::before {
+  content: '   ';
+  background: url('../img/modifneg.svg');
+  background-size: 16px 20px;
+  background-repeat: no-repeat;
+
+  padding: 0px 25px 0px 0px;
+  vertical-align: middle;
+  color: white!important;
+}
+
+.modifneg.pretSimbol {
+  color: white!important;
+  background-color: #f35530;
+}
+
+/* VABS */
+
+#vabs {
+  display: inline-block;
+  width: 100px;
+  max-width: 35%;
+  text-align: right;
+}
+
+.varSimbol {
+  /* padding: 0 12px; */
+  border-radius: 15px;
+}
+
+.modifpoz.varSimbol::before {
+  content: '   ';
+  background: url('../img/modifpoz.svg');
+  background-size: 12px 13px;
+  background-repeat: no-repeat;
+  padding: 0px 20px 0px 0px;
+  vertical-align: middle;
+  
+}
+.modifneg.varSimbol::before {
+  content: '   ';
+  background: url('../img/modifneg.svg');
+  background-size: 12px 13px;
+  background-repeat: no-repeat;
+  padding: 0px 20px 0px 0px;
+  vertical-align: middle;
+  color: #f35530!important;
+}
+
+.modifneg.varSimbol {
+  color: #f35530!important;
+}
+.modifpoz.varSimbol {
+  color: #00c805!important;
+}
+
+
+/* ASK */
+
+.ba_ask {
+  width: 40%;
+  max-width: 125px;
+  display: flex;
+  align-items: center;
+  padding: 0!important;
+}
+
+.ba_ask #ask {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  padding: 5px;
+  color: white;
+  border-right: 2px solid white;
+}
+
+.ba_ask span:last-of-type {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  padding: 5px 5px 5px 0;
+}
+
+/* ASK NEGATIV */
+
+.modifneg#ask::before {
+  content: '   ';
+  background: url('../img/modifneg.svg');
+  background-size: 12px 13px;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 16px;
+  /* margin-left: -15px; */
+  vertical-align: middle;
+}
+
+.modifneg#ask {
+  /* padding: 5px 0; */
+  border-radius: 20px 0 0 20px;
+  background-color: #f35530;
+  color: white!important;
+}
+
+
+/* ASK POZITIV */
+
+.modifpoz#ask::before {
+  content: '   ';
+  background: url('../img/modifpoz.svg');
+  background-size: 12px 13px;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 16px;
+  /* margin-left: -15px; */
+  vertical-align: middle;
+}
+
+.modifpoz#ask {
+  /* padding: 5px; */
+  border-radius: 20px 0 0 20px;
+  background-color: #00C805;
+  color: white!important;
+}
+
+
+/* BID */
+
+.ba_bid {
+  width: 40%;
+  max-width: 125px;
+  display: flex;
+  align-items: center;
+  padding: 0!important;
+}
+
+.ba_bid #bid {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  padding: 5px;
+  color: white;
+  border-left: 2px solid white;
+}
+
+.ba_bid span:first-of-type {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  padding: 5px 0 5px 10px;
+}
+
+/* BID NEGATIV */
+
+.modifneg#bid::before {
+  content: '   ';
+  background: url('../img/modifneg.svg');
+  background-size: 12px 13px;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 16px;
+  /* margin-left: -15px; */
+  vertical-align: middle;
+}
+
+.modifneg#bid {
+  /* padding: 5px 0; */
+  border-radius: 0 20px 20px 0;
+  background-color: #f35530;
+  color: white!important;
+}
+
+/* BID - pozitiv */
+
+.modifpoz#bid::before {
+  content: '   ';
+  background: url('../img/modifpoz.svg');
+  background-size: 12px 13px;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 16px;
+  /* margin-left: -15px; */
+  vertical-align: middle;
+}
+
+.modifpoz#bid {
+  /* padding: 5px; */
+  border-radius: 0 20px 20px 0;
+  background-color: #00C805;
+  color: white!important;
+}
